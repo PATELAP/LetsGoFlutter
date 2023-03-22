@@ -4,10 +4,9 @@ import 'package:flutter/material.dart';
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
 
-  @override
+  final imageUrl =
+      "https://images.news18.com/ibnlive/uploads/2021/06/1622960059_untitled-design-kid.png?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal";
   Widget build(BuildContext context) {
-    final imageUrl =
-        "https://images.news18.com/ibnlive/uploads/2021/06/1622960059_untitled-design-kid.png?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal";
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
@@ -25,7 +24,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(
                 CupertinoIcons.home,
                 color: Colors.white,
@@ -38,7 +37,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(
                 CupertinoIcons.profile_circled,
                 color: Colors.white,
@@ -51,7 +50,7 @@ class MyDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
+            const ListTile(
               leading: Icon(
                 CupertinoIcons.mail,
                 color: Colors.white,
