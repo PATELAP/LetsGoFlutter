@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
           title: Text(
         "Catelog App",
-        style: TextStyle(
+        style: TextStyle( 
           color: Colors.black,
         ),
       )),
