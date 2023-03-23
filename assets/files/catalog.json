@@ -1,0 +1,60 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "iPhone 12 Pro",
+            "desc": "Apple Iphone 12th generation",
+            "price": 999,
+            "color": "#33505a",
+            "image": "https://m.media-amazon.com/images/I/71cSV-RTBSL.jpg"
+        },
+        {
+            "id": 2,
+            "name": "iPhone 14 Pro",
+            "desc": "Apple Iphone 14th generation",
+            "price": 1999,
+            "color": "#33505a",
+            "image": "https://www.telstra.com.au/content/dam/tcom/devices/mobile/mhdwhst-14pr/deeppurple/landscape-front.png"
+        },
+        {
+            "id": 3,
+            "name": "Lenovno Ideapad Flex 5",
+            "desc": "Lenovo Leptop Flex 5th generation",
+            "price": 1299,
+            "color": "#33505a",
+            "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61k6VS1+1JL.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Dell 4k Monitor",
+            "desc": "Dell 4k HDR Display Monitor",
+            "price": 399,
+            "color": "#33505a",
+            "image": "https://cdn.thewirecutter.com/wp-content/media/2022/09/4kmonitors-2048px-9782.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Redmi Note 10",
+            "desc": "Xiaomi Mi Phone 10th generation",
+            "price": 149,
+            "color": "#33505a",
+            "image": "http://i01.appmifile.com/webfile/globalimg/gaoruijia/RN-10-Green!800x800!85.png"
+        },
+        {
+            "id": 6,
+            "name": "iPhone 11",
+            "desc": "Apple Iphone 11th generation",
+            "price": 499,
+            "color": "#33505a",
+            "image": "https://m.media-amazon.com/images/I/71cSV-RTBSL.jpg"
+        },
+        {
+            "id": 7,
+            "name": "OnePlus 11 5G",
+            "desc": "OnePlus 11th generation",
+            "price": 1099,
+            "color": "#33505a",
+            "image": "https://www.mobile-dokan.com/wp-content/uploads/2023/02/OnePlus-11-500x500.jpg"
+        }
+    ]
+}
