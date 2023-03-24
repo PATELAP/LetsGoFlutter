@@ -40,24 +40,44 @@ class _HomePageState extends State<HomePage> {
     // final dummyList = List.generate(15, (index) => CatelogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
-          title: Text(
+          title: const Text(
         "Catelog App",
         style: TextStyle(
           color: Colors.black,
         ),
       )),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: ListView.builder(
-          itemCount: CatelogModel.items.length,
-          itemBuilder: (context, index) {
-            return ItemWidget(
-              item: CatelogModel.items[index],
-            );
-          },
-        ),
-      ),
-      drawer: MyDrawer(),
+          padding: const EdgeInsets.all(16.0),
+          child: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              mainAxisSpacing: 16,
+              crossAxisSpacing: 16,
+            ),
+            itemBuilder: (context, index) {
+              final item = CatelogModel.items[index];
+              return Card(
+                  clipBehavior: Clip.antiAlias,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                  child: GridTile(
+                    header: Container(
+                      child: Text(
+                        item.name,
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: Colors.deepPurple,
+                      ),
+                    ),
+                    child: Image.network(item.image),
+                    footer: Text(item.price.toString()),
+                  ));
+            },
+            itemCount: CatelogModel.items.length,
+          )),
+      drawer: const MyDrawer(),
     );
   }
 }
