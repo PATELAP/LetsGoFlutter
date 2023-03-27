@@ -1,4 +1,10 @@
 class CatelogModel {
+  static final catModel = CatelogModel._internal();
+
+  CatelogModel._internal();
+
+  factory CatelogModel() => catModel;
+
   static List<Item> items = [
     Item(
         id: 1,
@@ -8,6 +14,13 @@ class CatelogModel {
         color: "#335505a",
         image: "https://m.media-amazon.com/images/I/71cSV-RTBSL.jpg")
   ];
+
+  //Get Item by ID
+  Item getById(int id) =>
+      items.firstWhere((element) => element.id == id, orElse: null);
+
+  // Get Item By Position
+  Item getByPosition(int pos) => items[pos];
 }
 
 class Item {
